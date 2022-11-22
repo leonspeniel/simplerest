@@ -32,6 +32,7 @@ public class SimpleRestController {
             String paramName = params.nextElement();
             urlInfo.put(paramName, request.getParameter(paramName));
         }
+        System.out.println(urlInfo);
         return urlInfo;
     }
 
